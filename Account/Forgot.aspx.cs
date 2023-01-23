@@ -23,7 +23,7 @@ namespace UsersWebApplication1.Account
                 ApplicationUser user = manager.FindByName(Email.Text);
                 if (user == null || !manager.IsEmailConfirmed(user.Id))
                 {
-                    FailureText.Text = "The user either does not exist or is not confirmed.";
+                    FailureText.Text = "Your account does not exist or is not approved. Please speak to your Admin contact.";
                     ErrorMessage.Visible = true;
                     return;
                 }
