@@ -95,19 +95,19 @@
                     <div class="accordion-container">
                         <button class="accordion">PDF document</button>
                         <div class="panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>The PDF document template enables you to develop documents that focus on the specific needs of a particular customer.   You can select the most appropriate template from one of the key topic areas as detailed in this custom platform. Customizable content elements enable you to create a document headline that talks directly to that customer, an introduction page that enables you to reflect on a conversation or highlight points related to that topic you know they are interested in and a back cover where you can provide your contact details and direct them to other assets such as a web landing page.<br><br>When a slide deck is personalized, people take it more seriously. They feel ownership over it. And when they do that, they have a closer connection to its source and its contents. </p>
                         </div>
                     </div>
                     <div class="accordion-container">
-                        <button class="accordion">HTML content</button>
+                        <button class="accordion">Email</button>
                         <div class="panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>The template enables you to create emails that enable you to develop a personal message to a customer, focusing on their specific needs and objectives.   You can select the most appropriate template from one of the key topic areas as detailed in this custom platform.  Customizable content elements enable you to write a personalized introduction that talks directly to that customer, connect relevant content and assets that relate to that topic, and provide your contact details to encourage continued engagement.<br><br>You can modify that copy to use key words that your contact used (uses). For instance, they might not use the word ‘resilience’ but ‘sound security practice’ – so use those words. They will resonate quicker with the reader. If they have mentioned specific areas, like a distributed workforce, then refer to that too. It can all fit into the template.</p>
                         </div>
                     </div>
                     <div class="accordion-container">
                         <button class="accordion">Website landing page</button>
                         <div class="panel">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Customers will engage with a landing page that’s personalized to their needs. When they do, it’s important that it gets to the point quickly in both the headline and the accompanying copy below it.<br><br>The template enables you to create landing pages that that focus on the specific needs of a particular customer.  You can select the most appropriate template from one of the key topic areas as detailed in this custom platform. Customizable content elements enable you to write a personalized introduction that talks directly to that customer, connect relevant content and assets that relate to that topic, and provide your contact details to encourage continued engagement.<br><br>Most people scan the top of a web page and only scroll down if they think it’s got what they need right now. So, it’s important to be clear that it DOES have what they need right now.</p>
                         </div>
                     </div>
                 </div>
