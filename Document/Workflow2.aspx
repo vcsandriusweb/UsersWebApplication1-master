@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Workflow2.aspx.cs" Inherits="UsersWebApplication1.Document.Workflow2" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Workflow2.aspx.cs" Inherits="UsersWebApplication1.Document.Workflow2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container py-2">
@@ -6,7 +6,7 @@
             <div class="col-9">
                 <p class="user-welcome-text">
                     Welcome <b><%:Session["fullName"].ToString() %></b>.<br />
-                    Here’s where you create your desired sales content
+                    Here's where you create your desired sales content
                 </p>
             </div>
         </div>
