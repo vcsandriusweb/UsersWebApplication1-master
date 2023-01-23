@@ -28,7 +28,7 @@
 
         .front-cover-subheading {
             position: absolute;
-            top: 880px;
+            top: 820px;
             left: 48px;
             font-family: "FujitsuInfinityPro-Bold", Helvetica, Arial;
             font-weight: normal;
