@@ -1,0 +1,1029 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DEF9B109-B6C1-49BB-BCFA-768F521D2648}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UsersWebApplication1</RootNamespace>
+    <AssemblyName>UsersWebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44347</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\Users\mejas\OneDrive\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AjaxControlToolkit.HtmlEditor.Sanitizer, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>packages\AjaxControlToolkit.HtmlEditor.Sanitizer.20.1.0\lib\net40\AjaxControlToolkit.HtmlEditor.Sanitizer.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap, Version=4.5.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\AspNet.ScriptManager.bootstrap.4.5.3\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.46.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlAgilityPack.1.11.46\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer, Version=1.5.0.5, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlRenderer.Core.1.5.0.5\lib\net45\HtmlRenderer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Select.Pdf, Version=22.2.0.0, Culture=neutral, PublicKeyToken=e0ae9f6e27a97018, processorArchitecture=MSIL">
+      <HintPath>packages\Select.Pdf.22.2.0\lib\net40\Select.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.9.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Mvc.5.2.9\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.Razor.3.2.9\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.AspNet.WebPages.3.2.9\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.Web.Infrastructure.2.0.1\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>packages\AspNet.ScriptManager.jQuery.3.4.1\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>packages\Microsoft.AspNet.Identity.Core.2.2.3\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>packages\Microsoft.AspNet.Identity.Owin.2.2.3\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>packages\Microsoft.AspNet.Identity.EntityFramework.2.2.3\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>packages\Microsoft.Owin.4.2.2\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>packages\Microsoft.Owin.Host.SystemWeb.4.2.2\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>packages\Microsoft.Owin.Security.4.2.2\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>packages\Microsoft.Owin.Security.Facebook.4.2.2\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>packages\Microsoft.Owin.Security.Cookies.4.2.2\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>packages\Microsoft.Owin.Security.Google.4.2.2\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>packages\Microsoft.Owin.Security.Twitter.4.2.2\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>packages\Microsoft.Owin.Security.MicrosoftAccount.4.2.2\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>packages\Microsoft.Owin.Security.OAuth.4.2.2\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".well-known\pki-validation\fileauth.txt" />
+    <Content Include=".well-known\pki-validation\ViewMe.png" />
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Admin\Users.aspx" />
+    <Content Include="BestPractise.aspx" />
+    <Content Include="Content\bootstrap-grid.css" />
+    <Content Include="Content\bootstrap-grid.min.css" />
+    <Content Include="Content\bootstrap-reboot.css" />
+    <Content Include="Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\customfonts.css" />
+    <Content Include="Content\reset.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Document\Preview\BusinessAgility.aspx" />
+    <Content Include="Document\Preview\CloudManagement.aspx" />
+    <Content Include="Document\Preview\CloudSecurityResilience.aspx" />
+    <Content Include="Document\Preview\CostOptimization.aspx" />
+    <Content Include="Document\Preview\DigitalTransformation.aspx" />
+    <Content Include="Document\Views\BusinessAgility.aspx" />
+    <Content Include="Document\Views\CloudManagement.aspx" />
+    <Content Include="Document\Views\CloudSecurityResilience.aspx" />
+    <Content Include="Document\Views\CostOptimization.aspx" />
+    <Content Include="Document\Views\DigitalTransformation.aspx" />
+    <Content Include="Document\Workflow.aspx" />
+    <Content Include="Document\Workflow2.aspx" />
+    <Content Include="Document\Workflow3.aspx" />
+    <Content Include="Document\Workflow4.aspx" />
+    <Content Include="Document\WorkflowPreview.aspx" />
+    <Content Include="Email\BusinessAgility\are-you-an-adaptive-organization.html" />
+    <Content Include="Email\BusinessAgility\not-born-agile-no-problem.html" />
+    <Content Include="Email\BusinessAgility\overcoming-complexity-is-key-to-agility.html" />
+    <Content Include="Email\BusinessAgility\why-resilience-is-the-key-to-transformation.html" />
+    <Content Include="Email\CloudManagement\agility-depends-on-great-cloud-management.html" />
+    <Content Include="Email\CloudManagement\compliance-doesnt-just-happen-it-must-be-managed.html" />
+    <Content Include="Email\CloudManagement\great-cloud-management-delivers-true-resilience.html" />
+    <Content Include="Email\CloudManagement\is-your-cloud-management-focused-on-the-right-imperative.html" />
+    <Content Include="Email\CloudSecurityResilience\7-key-priorities-for-hybrid-it-security.html" />
+    <Content Include="Email\CloudSecurityResilience\are-traditional-data-protection-strategies-increasing-risk.html" />
+    <Content Include="Email\CloudSecurityResilience\great-cloud-management-delivers-true-resilience.html" />
+    <Content Include="Email\CloudSecurityResilience\how-security-delivers-multi-cloud-confidence.html" />
+    <Content Include="Email\CloudSecurityResilience\is-data-growth-increasing-security-risks.html" />
+    <Content Include="Email\CloudSecurityResilience\is-your-organization-built-on-sand.html" />
+    <Content Include="Email\CloudSecurityResilience\managing-compliance-is-key-to-resilience.html" />
+    <Content Include="Email\CloudSecurityResilience\resilience-depends-on-secure-digital-infrastructure.html" />
+    <Content Include="Email\CostOptimization\do-more-spend-less-how-cloud-can-optimize-costs.html" />
+    <Content Include="Email\DigitalTransformation\5-priorities-for-successfully-adopting-emerging-technologies.html" />
+    <Content Include="Email\DigitalTransformation\are-you-on-the-path-to-innovation.html" />
+    <Content Include="Email\DigitalTransformation\ask-right-questions-get-best-cloud-answers.html" />
+    <Content Include="Email\DigitalTransformation\focus-on-4-pillars-of-your-digital-infrastructure.html" />
+    <Content Include="Email\DigitalTransformation\how-can-hybrid-it-drive-social-value.html" />
+    <Content Include="Email\EmailWorkflow3.aspx" />
+    <Content Include="Email\EmailWorkflow4.aspx" />
+    <Content Include="Email\Images\email-bg\blue-bg.png" />
+    <Content Include="Email\Images\email-bg\green-bg.png" />
+    <Content Include="Email\Images\email-bg\orange-bg.png" />
+    <Content Include="Email\Images\email-bg\red-bg.png" />
+    <Content Include="Email\Images\email-headers\business-agility-header.jpg" />
+    <Content Include="Email\Images\email-headers\cloud-management-header.jpg" />
+    <Content Include="Email\Images\email-headers\cloud-security-resilience-header.jpg" />
+    <Content Include="Email\Images\email-headers\cost-optimization-header.jpg" />
+    <Content Include="Email\Images\email-headers\digital-transformation-header.jpg" />
+    <Content Include="Email\Images\email-img-assets\10-questions-when-going-hybrid.png" />
+    <Content Include="Email\Images\email-img-assets\article- Sally-Eaves-Thought-leadership.png" />
+    <Content Include="Email\Images\email-img-assets\blog-are-you-born-to-be-agile-blog.png" />
+    <Content Include="Email\Images\email-img-assets\blog-are-you-on-path-to-innovation.png" />
+    <Content Include="Email\Images\email-img-assets\blog-Compliance-dont-let-it-be-your-achilles-heel.png" />
+    <Content Include="Email\Images\email-img-assets\blog-exploring-protect-foundations.png" />
+    <Content Include="Email\Images\email-img-assets\blog-how-can-hybrid-IT-drive-social-value.png" />
+    <Content Include="Email\Images\email-img-assets\blog-is-data-growth-increasing-security-risks.png" />
+    <Content Include="Email\Images\email-img-assets\blog-managing-your-cloud-is-the-key-to-resilience.png" />
+    <Content Include="Email\Images\email-img-assets\blog-traditional-data-protection.png" />
+    <Content Include="Email\Images\email-img-assets\case-study-Whitbread_.png" />
+    <Content Include="Email\Images\email-img-assets\cost-optimization-asset.png" />
+    <Content Include="Email\Images\email-img-assets\email-icon.jpg" />
+    <Content Include="Email\Images\email-img-assets\emerging-tech-challenger-guide.png" />
+    <Content Include="Email\Images\email-img-assets\fragile-to-agile.png" />
+    <Content Include="Email\Images\email-img-assets\Fujitsu-Logo-black.jpg" />
+    <Content Include="Email\Images\email-img-assets\Fujitsu-Logo.png" />
+    <Content Include="Email\Images\email-img-assets\healthcare-vertical.png" />
+    <Content Include="Email\Images\email-img-assets\hybrid-IT-alignment.png" />
+    <Content Include="Email\Images\email-img-assets\hybrid-IT-infrastructure.png" />
+    <Content Include="Email\Images\email-img-assets\hybrid-IT-proactivity.png" />
+    <Content Include="Email\Images\email-img-assets\hybrid-IT-secure-enterprise.png" />
+    <Content Include="Email\Images\email-img-assets\hybrid-IT-talent.png" />
+    <Content Include="Email\Images\email-img-assets\hybrid-IT-tech.png" />
+    <Content Include="Email\Images\email-img-assets\manufacturing-vertical.png" />
+    <Content Include="Email\Images\email-img-assets\multi-cloud-security-secure-framework-for-future-agility.png" />
+    <Content Include="Email\Images\email-img-assets\phone-icon.jpg" />
+    <Content Include="Email\Images\email-img-assets\public-sector-vertical.png" />
+    <Content Include="Email\Images\email-img-assets\retail-vertical.png" />
+    <Content Include="Email\Images\email-img-assets\security-challenger-guide.png" />
+    <Content Include="Email\Images\email-img-assets\transformed-for-good.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Account\Web.config" />
+    <Content Include="fonts\FujitsuInfinityPro-Bold.woff2" />
+    <Content Include="fonts\FujitsuInfinityPro-BoldItalic.woff2" />
+    <Content Include="fonts\FujitsuInfinityPro-ExtraBold.woff2" />
+    <Content Include="fonts\FujitsuInfinityPro-Light.woff2" />
+    <Content Include="fonts\FujitsuInfinityPro-Regular.woff2" />
+    <Content Include="fonts\FujitsuInfinityPro-RegularItalic.woff2" />
+    <Content Include="Images\10-questions-when-going-hybrid.png" />
+    <Content Include="Images\7935-14-FJ_SB_H.png" />
+    <Content Include="Images\arrow-colored.png" />
+    <Content Include="Images\arrow-dark.png" />
+    <Content Include="Images\arrow_down.svg" />
+    <Content Include="Images\arrow_forward_red.svg" />
+    <Content Include="Images\article-Sally Eaves-Thought-leadership.png" />
+    <Content Include="Images\benefits-img-2_tcm100-6584984_tcm100-2750236-32.jpeg" />
+    <Content Include="Images\benefits-img-3_tcm100-6584985_tcm100-2750236-32.jpeg" />
+    <Content Include="Images\blog-are-you-born-to-be-agile.png" />
+    <Content Include="Images\blog-are-you-on-the-path-to-innovation.png" />
+    <Content Include="Images\blog-Compliance-dont-let-it-be-your-achilles-heel.png" />
+    <Content Include="Images\blog-exploring-protect-foundations.png" />
+    <Content Include="Images\blog-how-can-hybrid-IT-drive-social-value.png" />
+    <Content Include="Images\blog-Is-data-growth-increasing-security-risks.png" />
+    <Content Include="Images\blog-know-what-you-want-to -achieve.png" />
+    <Content Include="Images\blog-managing-your-cloud-is-the-key-to-resilience.png" />
+    <Content Include="Images\blog-traditional-data-protection.png" />
+    <Content Include="Images\btn-arrow-red.svg" />
+    <Content Include="Images\buisness-agility-mob-banner.jpg" />
+    <Content Include="Images\business-agility-banner-bg.jpg" />
+    <Content Include="Images\business-agility-icon-target.png" />
+    <Content Include="Images\business-agility-image.jpg" />
+    <Content Include="Images\business-agility-tab-header.jpg" />
+    <Content Include="Images\business-agility-tab-header.png" />
+    <Content Include="Images\cloud-management-banner-bg.jpg" />
+    <Content Include="Images\cloud-management-header.jpg" />
+    <Content Include="Images\cloud-management-image.jpg" />
+    <Content Include="Images\cloud-management-tab-header.png" />
+    <Content Include="Images\cloud-security-banner-bg.jpg" />
+    <Content Include="Images\cloud-security-tab-header.png" />
+    <Content Include="Images\Compliance-Icon_tcm100-6841801_tcm100-2750236-32.png" />
+    <Content Include="Images\cost-optimization-banner-bg.jpg" />
+    <Content Include="Images\cost-optimization-challenger-guide.png" />
+    <Content Include="Images\cost-optimization-tab-header.png" />
+    <Content Include="Images\digital-transformation-banner-bg.jpg" />
+    <Content Include="Images\digital-transformation-image.jpg" />
+    <Content Include="Images\digital-transformation-phone-header.jpg" />
+    <Content Include="Images\digital-transformation-tab-header.jpg" />
+    <Content Include="Images\digital-transformation-tab-header.png" />
+    <Content Include="Images\email-example-1.png" />
+    <Content Include="Images\email-example-2.png" />
+    <Content Include="Images\email-icon.svg" />
+    <Content Include="Images\emerging-tech-challenger-guide.png" />
+    <Content Include="Images\FJ Logo Red RGB.png" />
+    <Content Include="Images\FJ_UVANCE_LOGO_WHITE_RGB.png" />
+    <Content Include="Images\fragile-to-agile-part-1.png" />
+    <Content Include="Images\fujitsu-img-workflow4-example-1.png" />
+    <Content Include="Images\fujitsu-img-workflow4-example-2.png" />
+    <Content Include="Images\fujitsu-img-workflow4-example.png" />
+    <Content Include="Images\fujitsu-intro-img-1.png" />
+    <Content Include="Images\fujitsu-intro-img-2.png" />
+    <Content Include="Images\fujitsu-intro-section-half-bg.png" />
+    <Content Include="Images\fujitsu-section-title-bg-blue.png" />
+    <Content Include="Images\fujitsu-section-title-bg-yellow.png" />
+    <Content Include="Images\fujitsu-tab-icon-mail-active.svg" />
+    <Content Include="Images\fujitsu-tab-icon-mail.svg" />
+    <Content Include="Images\fujitsu-tab-icon-pdf-active.svg" />
+    <Content Include="Images\fujitsu-tab-icon-pdf.svg" />
+    <Content Include="Images\fujitsu-tab-icon-web-active.svg" />
+    <Content Include="Images\fujitsu-tab-icon-web.svg" />
+    <Content Include="Images\fujitsu-tab-img-1.png" />
+    <Content Include="Images\fujitsu-tab-img-2.png" />
+    <Content Include="Images\fujitsu-tab-img-3.png" />
+    <Content Include="Images\fujitsu-tab-img-4.png" />
+    <Content Include="Images\FUJITSU_WHITE_RGB.png" />
+    <Content Include="Images\highlight-bg_tcm100-6584974_tcm100-2750236-32.jpeg" />
+    <Content Include="Images\hybrid-IT-infrastructure.png" />
+    <Content Include="Images\icon-facebook.png" />
+    <Content Include="Images\icon-linkedin.png" />
+    <Content Include="Images\icon-number-1.svg" />
+    <Content Include="Images\icon-number-2.svg" />
+    <Content Include="Images\icon-number-3.svg" />
+    <Content Include="Images\icon-number-4.svg" />
+    <Content Include="Images\icon-tab-active.svg" />
+    <Content Include="Images\icon-tab-pdf.svg" />
+    <Content Include="Images\icon-twitter.png" />
+    <Content Include="Images\icon-workflow-mail.svg" />
+    <Content Include="Images\icon-workflow-pdf.svg" />
+    <Content Include="Images\icon-workflow-webpages.svg" />
+    <Content Include="Images\icon-youtube.png" />
+    <Content Include="Images\Intro page crop.png" />
+    <Content Include="Images\intro-banner-bg.jpg" />
+    <Content Include="Images\intro-device-mockup.png" />
+    <Content Include="Images\intro-icon-customize-assets.png" />
+    <Content Include="Images\intro-icon-key-topics.png" />
+    <Content Include="Images\intro-tab-header.png" />
+    <Content Include="Images\Mask Group 1.jpg" />
+    <Content Include="Images\mockup_example.png" />
+    <Content Include="Images\multi-cloud-security-secure-framework-for-future-agility.png" />
+    <Content Include="Images\next.svg" />
+    <Content Include="Images\pdf-mockup-place-holder.svg" />
+    <Content Include="Images\phone-icon.svg" />
+    <Content Include="Images\place-holder-video-2.jpg" />
+    <Content Include="Images\place-holder-video.png" />
+    <Content Include="Images\prev.svg" />
+    <Content Include="Images\Resilience-Icon_tcm100-6841799_tcm100-2750236-32.png" />
+    <Content Include="Images\security-challenger-guide.png" />
+    <Content Include="Images\Shared\Thumbnail\10\Slide1.png" />
+    <Content Include="Images\Shared\Thumbnail\1\Slide1.PNG" />
+    <Content Include="Images\Shared\Thumbnail\2\Slide1.png" />
+    <Content Include="Images\Shared\Thumbnail\3\Slide1.png" />
+    <Content Include="Images\Shared\Thumbnail\4\Slide1.png" />
+    <Content Include="Images\Shared\Thumbnail\5\Slide1.png" />
+    <Content Include="Images\Shared\Thumbnail\6\Slide1.png" />
+    <Content Include="Images\Shared\Thumbnail\7\Slide1.png" />
+    <Content Include="Images\Shared\Thumbnail\8\Slide1.png" />
+    <Content Include="Images\Shared\Thumbnail\9\Slide1.png" />
+    <Content Include="Landing\BusinessAgility\index.html" />
+    <Content Include="Landing\CloudManagement\agility-depends-on-great-cloud-management.html" />
+    <Content Include="Landing\CloudManagement\compliance-doesnt-just-happen.html" />
+    <Content Include="Landing\CloudManagement\great-cloud-management-delivers-true-resilience.html" />
+    <Content Include="Landing\CloudManagement\why-razor-focus-on-management-is-key.html" />
+    <Content Include="Landing\CloudSecurityResilience\great-cloud-management-delivers-true-resilience.html" />
+    <Content Include="Landing\CloudSecurityResilience\how-security-delivers-multi-cloud-confidence.html" />
+    <Content Include="Landing\CloudSecurityResilience\how-traditional-data-protection-strategies-increasing-risk.html" />
+    <Content Include="Landing\CloudSecurityResilience\is-data-growth-increasing-security-risk.html" />
+    <Content Include="Landing\CloudSecurityResilience\is-your-organization-built-on-sand.html" />
+    <Content Include="Landing\CloudSecurityResilience\managing-compliance-is-key-to-resilience.html" />
+    <Content Include="Landing\CloudSecurityResilience\resilience-depends-on-a-secure-digital-infrastructure.html" />
+    <Content Include="Landing\CloudSecurityResilience\the-7-key-priorities-for-hybrid-IT-security.html" />
+    <Content Include="Landing\CostOptimization\index.html" />
+    <Content Include="Landing\DigitalTransformation\5-priorities-for-successful-adopting-emerging-technologies.html" />
+    <Content Include="Landing\DigitalTransformation\are-you-on-the-path-to-innovation.html" />
+    <Content Include="Landing\DigitalTransformation\building-digital-infrastructure-for-connected-society.html" />
+    <Content Include="Landing\DigitalTransformation\how-can-hybrid-IT-drive-social-value.html" />
+    <Content Include="Landing\DigitalTransformation\top-10-questions-when-going-hybrid.html" />
+    <Content Include="Landing\LandingWorkflow3.aspx" />
+    <Content Include="Landing\LandingWorkflow4.aspx" />
+    <Content Include="Scripts\accordion.js" />
+    <Content Include="Scripts\bootstrap.bundle.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\esm\popper-utils.js" />
+    <Content Include="Scripts\esm\popper-utils.min.js" />
+    <Content Include="Scripts\esm\popper.js" />
+    <Content Include="Scripts\esm\popper.min.js" />
+    <Content Include="Scripts\index.js.flow" />
+    <Content Include="Scripts\esm\popper.min.js.map" />
+    <Content Include="Scripts\esm\popper.js.map" />
+    <Content Include="Scripts\esm\popper-utils.min.js.map" />
+    <Content Include="Scripts\esm\popper-utils.js.map" />
+    <Content Include="Scripts\bootstrap.min.js.map" />
+    <Content Include="Scripts\bootstrap.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Email\pdf\business-agility-pdf\Are-you-born-agile.pdf" />
+    <Content Include="Email\pdf\business-agility-pdf\Fujitsu-and-Microsoft-Transformed-Ops.pdf" />
+    <Content Include="Email\pdf\business-agility-pdf\Fujitsu-Fragile-to-Agile-Part1.pdf" />
+    <Content Include="Email\pdf\business-agility-pdf\Fujitsu-Multicloud-Report.pdf" />
+    <Content Include="Email\pdf\business-agility-pdf\Managing-your-cloud-is-the-key-to-resilience.pdf" />
+    <Content Include="Email\pdf\business-agility.pdf" />
+    <Content Include="Email\pdf\cloud-management-pdf\Are-you-born-agile.pdf" />
+    <Content Include="Email\pdf\cloud-management-pdf\Compliance-Dont-let-IT-be-your-Achilles-Heel.pdf" />
+    <Content Include="Email\pdf\cloud-management-pdf\FUJITSU-FCMS-THOUGHT-LEADERSHIP-ARTICLE.pdf" />
+    <Content Include="Email\pdf\cloud-management-pdf\Managing-your-cloud-is-the-key-to-resilience.pdf" />
+    <Content Include="Email\pdf\cloud-management.pdf" />
+    <Content Include="Email\pdf\cloud-security-pdf\Compliance-Dont-let-IT-be-your-Achilles-Heel.pdf" />
+    <Content Include="Email\pdf\cloud-security-pdf\FUJITSU-HYBRID-IT-TECH-DIGITAL-INFRASTRUCTURE.pdf" />
+    <Content Include="Email\pdf\cloud-security-pdf\FUJITSU-HYBRID-IT-TECH-SECURE-ENTERPRISE.pdf" />
+    <Content Include="Email\pdf\cloud-security-pdf\Fujitsu-Security-Challenger-Guide.pdf" />
+    <Content Include="Email\pdf\cloud-security-pdf\Managing-your-cloud-is-the-key-to-resilience.pdf" />
+    <Content Include="Email\pdf\cloud-security-pdf\MULTI-CLOUD-SECURITY.pdf" />
+    <Content Include="Email\pdf\cloud-security-resilience.pdf" />
+    <Content Include="Email\pdf\cost-optimization-pdf\Fujitsu-Cost-Optimization-Challenger-Guide.pdf" />
+    <Content Include="Email\pdf\cost-optimization-pdf\Fujitsu-Emerging-Technologies-Challenger-Guide.pdf" />
+    <Content Include="Email\pdf\cost-optimization.pdf" />
+    <Content Include="Email\pdf\digital-transformation-cloud-adoption.pdf" />
+    <Content Include="Email\pdf\digital-transformation-pdf\Fujitsu-Emerging-Technologies-Challenger-Guide.pdf" />
+    <Content Include="Email\pdf\digital-transformation-pdf\FUJITSU-HYBRID-IT-TECH-DIGITAL-INFRASTRUCTURE-BROCHURE.pdf" />
+    <Content Include="Email\pdf\digital-transformation-pdf\FUJITSU-HYBRID-IT-TOP-10-Qs.pdf" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Images\CloudManagement\Slide10.PNG" />
+    <Content Include="Images\CloudManagement\Slide11.PNG" />
+    <Content Include="Images\CloudManagement\Slide2.PNG" />
+    <Content Include="Images\CloudManagement\Slide3.PNG" />
+    <Content Include="Images\CloudManagement\Slide4.PNG" />
+    <Content Include="Images\CloudManagement\Slide5.PNG" />
+    <Content Include="Images\CloudManagement\Slide6.PNG" />
+    <Content Include="Images\CloudManagement\Slide7.PNG" />
+    <Content Include="Images\CloudManagement\Slide8.PNG" />
+    <Content Include="Images\CloudManagement\Slide9.PNG" />
+    <Content Include="Images\CostOptimization\Slide2.PNG" />
+    <Content Include="Images\CostOptimization\Slide3.PNG" />
+    <Content Include="Images\CostOptimization\Slide4.PNG" />
+    <Content Include="Images\CostOptimization\Slide5.PNG" />
+    <Content Include="Images\CostOptimization\Slide6.PNG" />
+    <Content Include="Images\CostOptimization\Slide7.PNG" />
+    <Content Include="Images\CostOptimization\Slide8.PNG" />
+    <Content Include="Images\CostOptimization\Slide9.PNG" />
+    <Content Include="Images\DigitalTransformation\Slide2.PNG" />
+    <Content Include="Images\DigitalTransformation\Slide3.PNG" />
+    <Content Include="Images\DigitalTransformation\Slide4.PNG" />
+    <Content Include="Images\DigitalTransformation\Slide5.PNG" />
+    <Content Include="Images\DigitalTransformation\Slide6.PNG" />
+    <Content Include="Images\DigitalTransformation\Slide7.PNG" />
+    <Content Include="Images\SecurityResilience\Slide10.PNG" />
+    <Content Include="Images\SecurityResilience\Slide11.PNG" />
+    <Content Include="Images\SecurityResilience\Slide12.PNG" />
+    <Content Include="Images\SecurityResilience\Slide13.PNG" />
+    <Content Include="Images\SecurityResilience\Slide14.PNG" />
+    <Content Include="Images\SecurityResilience\Slide15.PNG" />
+    <Content Include="Images\SecurityResilience\Slide16.PNG" />
+    <Content Include="Images\SecurityResilience\Slide17.PNG" />
+    <Content Include="Images\SecurityResilience\Slide18.PNG" />
+    <Content Include="Images\SecurityResilience\Slide2.PNG" />
+    <Content Include="Images\SecurityResilience\Slide3.PNG" />
+    <Content Include="Images\SecurityResilience\Slide4.PNG" />
+    <Content Include="Images\SecurityResilience\Slide5.PNG" />
+    <Content Include="Images\SecurityResilience\Slide6.PNG" />
+    <Content Include="Images\SecurityResilience\Slide7.PNG" />
+    <Content Include="Images\SecurityResilience\Slide8.PNG" />
+    <Content Include="Images\SecurityResilience\Slide9.PNG" />
+    <Content Include="Images\Shared\10\Slide1.png" />
+    <Content Include="Images\Shared\1\Slide1.PNG" />
+    <Content Include="Images\Shared\2\Slide1.png" />
+    <Content Include="Images\Shared\3\Slide1.png" />
+    <Content Include="Images\Shared\4\Slide1.png" />
+    <Content Include="Images\Shared\5\Slide1.png" />
+    <Content Include="Images\Shared\6\Slide1.png" />
+    <Content Include="Images\Shared\7\Slide1.png" />
+    <Content Include="Images\Shared\8\Slide1.png" />
+    <Content Include="Images\Shared\9\Slide1.png" />
+    <Content Include="Images\BusinessAgility\Slide2.PNG" />
+    <Content Include="Images\BusinessAgility\Slide3.PNG" />
+    <Content Include="Images\BusinessAgility\Slide4.PNG" />
+    <Content Include="Images\BusinessAgility\Slide5.PNG" />
+    <Content Include="Images\BusinessAgility\Slide6.PNG" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\popper-utils.js" />
+    <Content Include="Scripts\popper-utils.min.js" />
+    <Content Include="Scripts\popper.js" />
+    <Content Include="Scripts\popper.min.js" />
+    <Content Include="Scripts\slider.js" />
+    <Content Include="Scripts\src\index.js" />
+    <Content Include="Scripts\src\methods\defaults.js" />
+    <Content Include="Scripts\src\methods\destroy.js" />
+    <Content Include="Scripts\src\methods\disableEventListeners.js" />
+    <Content Include="Scripts\src\methods\enableEventListeners.js" />
+    <Content Include="Scripts\src\methods\placements.js" />
+    <Content Include="Scripts\src\methods\update.js" />
+    <Content Include="Scripts\src\modifiers\applyStyle.js" />
+    <Content Include="Scripts\src\modifiers\arrow.js" />
+    <Content Include="Scripts\src\modifiers\computeStyle.js" />
+    <Content Include="Scripts\src\modifiers\flip.js" />
+    <Content Include="Scripts\src\modifiers\hide.js" />
+    <Content Include="Scripts\src\modifiers\index.js" />
+    <Content Include="Scripts\src\modifiers\inner.js" />
+    <Content Include="Scripts\src\modifiers\keepTogether.js" />
+    <Content Include="Scripts\src\modifiers\offset.js" />
+    <Content Include="Scripts\src\modifiers\preventOverflow.js" />
+    <Content Include="Scripts\src\modifiers\shift.js" />
+    <Content Include="Scripts\src\utils\clockwise.js" />
+    <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
+    <Content Include="Scripts\src\utils\debounce.js" />
+    <Content Include="Scripts\src\utils\find.js" />
+    <Content Include="Scripts\src\utils\findCommonOffsetParent.js" />
+    <Content Include="Scripts\src\utils\findIndex.js" />
+    <Content Include="Scripts\src\utils\getBordersSize.js" />
+    <Content Include="Scripts\src\utils\getBoundaries.js" />
+    <Content Include="Scripts\src\utils\getBoundingClientRect.js" />
+    <Content Include="Scripts\src\utils\getClientRect.js" />
+    <Content Include="Scripts\src\utils\getFixedPositionOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetParent.js" />
+    <Content Include="Scripts\src\utils\getOffsetRect.js" />
+    <Content Include="Scripts\src\utils\getOffsetRectRelativeToArbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getOppositePlacement.js" />
+    <Content Include="Scripts\src\utils\getOppositeVariation.js" />
+    <Content Include="Scripts\src\utils\getOuterSizes.js" />
+    <Content Include="Scripts\src\utils\getParentNode.js" />
+    <Content Include="Scripts\src\utils\getPopperOffsets.js" />
+    <Content Include="Scripts\src\utils\getReferenceNode.js" />
+    <Content Include="Scripts\src\utils\getReferenceOffsets.js" />
+    <Content Include="Scripts\src\utils\getRoot.js" />
+    <Content Include="Scripts\src\utils\getRoundedOffsets.js" />
+    <Content Include="Scripts\src\utils\getScroll.js" />
+    <Content Include="Scripts\src\utils\getScrollParent.js" />
+    <Content Include="Scripts\src\utils\getStyleComputedProperty.js" />
+    <Content Include="Scripts\src\utils\getSupportedPropertyName.js" />
+    <Content Include="Scripts\src\utils\getViewportOffsetRectRelativeToArtbitraryNode.js" />
+    <Content Include="Scripts\src\utils\getWindow.js" />
+    <Content Include="Scripts\src\utils\getWindowSizes.js" />
+    <Content Include="Scripts\src\utils\includeScroll.js" />
+    <Content Include="Scripts\src\utils\index.js" />
+    <Content Include="Scripts\src\utils\isBrowser.js" />
+    <Content Include="Scripts\src\utils\isFixed.js" />
+    <Content Include="Scripts\src\utils\isFunction.js" />
+    <Content Include="Scripts\src\utils\isIE.js" />
+    <Content Include="Scripts\src\utils\isModifierEnabled.js" />
+    <Content Include="Scripts\src\utils\isModifierRequired.js" />
+    <Content Include="Scripts\src\utils\isNumeric.js" />
+    <Content Include="Scripts\src\utils\isOffsetContainer.js" />
+    <Content Include="Scripts\src\utils\removeEventListeners.js" />
+    <Content Include="Scripts\src\utils\runModifiers.js" />
+    <Content Include="Scripts\src\utils\setAttributes.js" />
+    <Content Include="Scripts\src\utils\setStyles.js" />
+    <Content Include="Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Scripts\tabs.js" />
+    <Content Include="Scripts\umd\popper-utils.js" />
+    <Content Include="Scripts\umd\popper-utils.min.js" />
+    <Content Include="Scripts\umd\popper.js" />
+    <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Site.Master" />
+    <Content Include="SQL\alter user table.sql" />
+    <Content Include="SQL\Create dbo.usp_SaveUserData.sql" />
+    <Content Include="SQL\usp_DeleteUserData.sql" />
+    <Content Include="SQL\usp_GetDocumentDetail.sql" />
+    <Content Include="SQL\usp_GetUserData.sql" />
+    <Content Include="SQL\usp_SaveDocumentDetail.sql" />
+    <Content Include="SQL\usp_SaveEmailDetail.sql" />
+    <Content Include="SQL\[EmailDetail].sql" />
+    <Content Include="SQL\[usp_GetUserDetails].sql" />
+    <Content Include="SQL\[usp_SaveEmailDetail].sql" />
+    <Content Include="SQL\users.sql" />
+    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Bundle.config" />
+    <Content Include="Site.Mobile.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AddPhoneNumber.aspx.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.cs">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.cs">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.cs">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.cs">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.cs">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.cs">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.cs">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.cs">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.cs">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.cs">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\BundleConfig2.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\RouteConfig2.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="BestPractise.aspx.cs">
+      <DependentUpon>BestPractise.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BestPractise.aspx.designer.cs">
+      <DependentUpon>BestPractise.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Preview\BusinessAgility.aspx.cs">
+      <DependentUpon>BusinessAgility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Preview\BusinessAgility.aspx.designer.cs">
+      <DependentUpon>BusinessAgility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Preview\CloudManagement.aspx.cs">
+      <DependentUpon>CloudManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Preview\CloudManagement.aspx.designer.cs">
+      <DependentUpon>CloudManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Preview\CloudSecurityResilience.aspx.cs">
+      <DependentUpon>CloudSecurityResilience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Preview\CloudSecurityResilience.aspx.designer.cs">
+      <DependentUpon>CloudSecurityResilience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Preview\CostOptimization.aspx.cs">
+      <DependentUpon>CostOptimization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Preview\CostOptimization.aspx.designer.cs">
+      <DependentUpon>CostOptimization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Preview\DigitalTransformation.aspx.cs">
+      <DependentUpon>DigitalTransformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Preview\DigitalTransformation.aspx.designer.cs">
+      <DependentUpon>DigitalTransformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Views\BusinessAgility.aspx.cs">
+      <DependentUpon>BusinessAgility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Views\BusinessAgility.aspx.designer.cs">
+      <DependentUpon>BusinessAgility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Views\CloudManagement.aspx.cs">
+      <DependentUpon>CloudManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Views\CloudManagement.aspx.designer.cs">
+      <DependentUpon>CloudManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Views\CloudSecurityResilience.aspx.cs">
+      <DependentUpon>CloudSecurityResilience.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Views\CloudSecurityResilience.aspx.designer.cs">
+      <DependentUpon>CloudSecurityResilience.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Views\CostOptimization.aspx.cs">
+      <DependentUpon>CostOptimization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Views\CostOptimization.aspx.designer.cs">
+      <DependentUpon>CostOptimization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Views\DigitalTransformation.aspx.cs">
+      <DependentUpon>DigitalTransformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Views\DigitalTransformation.aspx.designer.cs">
+      <DependentUpon>DigitalTransformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Workflow.aspx.cs">
+      <DependentUpon>Workflow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Workflow.aspx.designer.cs">
+      <DependentUpon>Workflow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Workflow2.aspx.cs">
+      <DependentUpon>Workflow2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Workflow2.aspx.designer.cs">
+      <DependentUpon>Workflow2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Workflow3.aspx.cs">
+      <DependentUpon>Workflow3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Workflow3.aspx.designer.cs">
+      <DependentUpon>Workflow3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\Workflow4.aspx.cs">
+      <DependentUpon>Workflow4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\Workflow4.aspx.designer.cs">
+      <DependentUpon>Workflow4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Document\WorkflowPreview.aspx.cs">
+      <DependentUpon>WorkflowPreview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Document\WorkflowPreview.aspx.designer.cs">
+      <DependentUpon>WorkflowPreview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Email\EmailWorkflow3.aspx.cs">
+      <DependentUpon>EmailWorkflow3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Email\EmailWorkflow3.aspx.designer.cs">
+      <DependentUpon>EmailWorkflow3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Email\EmailWorkflow4.aspx.cs">
+      <DependentUpon>EmailWorkflow4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Email\EmailWorkflow4.aspx.designer.cs">
+      <DependentUpon>EmailWorkflow4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Landing\LandingWorkflow3.aspx.cs">
+      <DependentUpon>LandingWorkflow3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Landing\LandingWorkflow3.aspx.designer.cs">
+      <DependentUpon>LandingWorkflow3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Landing\LandingWorkflow4.aspx.cs">
+      <DependentUpon>LandingWorkflow4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Landing\LandingWorkflow4.aspx.designer.cs">
+      <DependentUpon>LandingWorkflow4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ConfigSettings.cs" />
+    <Compile Include="Models\Crypto.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.cs">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Startup.cs" />
+    <Compile Include="ViewSwitcher.ascx.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.cs">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Controllers\" />
+    <Folder Include="Data\" />
+    <Folder Include="downloads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Scripts\umd\popper.min.js.map" />
+    <Content Include="Scripts\umd\popper.js.map" />
+    <Content Include="Scripts\umd\popper.js.flow" />
+    <Content Include="Scripts\umd\popper-utils.min.js.map" />
+    <Content Include="Scripts\umd\popper-utils.js.map" />
+    <Content Include="Scripts\README.md" />
+    <Content Include="Scripts\popper.min.js.map" />
+    <Content Include="Scripts\popper.js.map" />
+    <Content Include="Scripts\popper-utils.min.js.map" />
+    <Content Include="Scripts\popper-utils.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58378</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/UsersWebApplication1</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <Import Project="packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

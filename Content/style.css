@@ -1,0 +1,1323 @@
+@font-face {
+	font-family:"FujitsuInfinityPro-Regular";
+	src:url('http://hybridcustomization.com/fonts/FujitsuInfinityPro-Regular.woff2') format('woff2');
+}
+
+body {
+	font-family:"FujitsuInfinityPro-Regular", Montserrat, sans-serif; 
+	font-size: 16px;
+	margin: 0;
+	background-color: #ffffff;
+	color: #3c3c3c;
+}
+
+
+
+section {
+	padding: 5% 0 7%;
+	position: relative;
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+section .row {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+section [class*="col-"] {
+	float: left;
+	padding: 0 20px;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+strong {
+	font-weight: 600;
+}
+
+.no-bold-text {
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	line-height: 1.5em;
+}
+
+h1 {
+	font-size: 35px;
+	color: #ffffff;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 25px;
+	padding: 20px 0;
+}
+
+h4 {
+	font-size: 22px;
+	font-weight: 400;
+	padding-bottom: 30px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 14px;
+}
+
+em {
+	font-style: italic;
+}
+
+.centered {
+	text-align: center;
+	width: 100%;
+}
+
+p {
+	line-height: 1.7em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+h2.section-title {
+	padding: 20px 0;
+}
+
+.light {
+	color: #ffffff;
+}
+
+.btn-wrapper {
+	position: relative;
+	display: block;
+	padding: 10px 0;
+	margin: 30px 0 0;
+}
+
+.btn {
+	border-radius: 20px;
+	font-weight: 600;
+	color: #ffffff;	
+	width: auto;
+	background-color: #ea0001;
+	padding: 10px 20px;
+}
+
+.btn-light {
+	position: relative;
+	color: #3c3c3c;
+	background-color: #ffffff;
+	padding: 10px 40px 10px 20px;	
+}
+
+.btn-light::after {
+	position: absolute;
+	content: url("../../images/arrow-dark.png");
+	top: 6px;
+	right: 10px;
+}
+
+.btn-bordered {
+	position: relative;
+	color: #3c3c3c;
+	border: 1px solid #ea0001;
+	padding: 10px 20px 10px 20px;
+	background-color: transparent;
+}
+
+.btn-colored {
+	position: relative;
+	color: #ffffff;
+	background-color: #ea0001;
+	padding: 10px 40px 10px 20px;
+}
+
+.btn-colored::after {
+	position: absolute;
+	content: url("../../images/arrow-colored.png");
+	top: 6px;
+	right: 10px;
+}
+
+.content-video {
+	max-width: 640px;
+	margin: 30px 0 0;
+	margin: 0 auto;
+}
+
+ul, ol {
+	padding: 20px 0;
+}
+
+ol {
+    list-style-type: decimal !important;
+}
+
+.cs-featured-content ul {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+ul li, ol li {
+	line-height: 1.7em;
+	margin-bottom: 1.5em;
+	position: relative;
+	margin-left: 25px;
+}
+
+.cs-featured-content ul li {
+	text-align: left;
+}
+
+ul li::before {
+	position: absolute;
+	content: "";
+	left: -20px;
+	top: 10px;
+	width: 8px;
+	height: 8px;
+	background-color: #ffffff;
+	border-radius: 100%;
+}
+
+ul li::before {
+	background-color: #e90003;
+}
+
+.horz-divider {
+	width: 100%;
+	height: 1px;
+	background-color: #3c3c3c;
+	margin: 20px 0;
+}
+
+.box-bordered {
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	padding: 20px 30px;
+}
+
+/* HEADER */
+
+#fujitsu-header {
+	width: 100%;
+	background-color: #ffffff;	
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.logo-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+section .row.mob-banner-image {
+	display: none !important;
+}
+
+/* BANNER */
+#fujitsu-banner {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: initial;
+	padding: 0;
+}
+#fujitsu-banner.dt-banner {
+	background-image: url("../images/digital-transformation-banner-bg.jpg");
+}
+
+#fujitsu-banner.ba-banner {
+	background-image: url("../images/business-agility-banner-bg.jpg");
+}
+
+#fujitsu-banner.cm-banner {
+	background-image: url("../images/cloud-management-banner-bg.jpg");
+}
+
+#fujitsu-banner.cs-banner {
+	background-image: url("../images/cloud-security-banner-bg.jpg");
+}
+
+#fujitsu-banner.co-banner {
+	background-image: url("../images/cost-optimization-banner-bg.jpg");
+}
+
+#fujitsu-banner.start-banner {
+	background-image: url("../images/intro-banner-bg.jpg");
+	background-size: cover;
+}
+
+#fujitsu-intro.bp-intro {
+	background-color: #ffffff;
+	padding: 3% 0 2%;
+}
+
+.banner-content {
+	padding: 5% 0;
+}
+
+#fujitsu-banner .col-5 {
+	float: none;
+}
+
+#fujitsu-intro .col-8 {
+	margin: 0 auto;
+}
+
+/* HOW IT WORKS */
+
+#fujitsu-how-it-works {
+	background-color: #3c3c3c;
+}
+
+#fujitsu-how-it-works .row {
+	align-items: flex-start;
+}
+
+#fujitsu-how-it-works .row:nth-of-type(3n) {
+	border-bottom: 1px solid #ffffff;
+	padding: 50px 0;
+}
+
+/* CONTENT TYPE */
+#fujitsu-content-type {
+	background-color: #efefef;
+}
+
+#fujitsu-content-type .row:nth-of-type(2n) .text-box {
+	background-color: #ffffff;
+	border-radius: 15px;
+	padding: 40px;
+}
+
+#fujitsu-content-type .col-6:nth-of-type(2n) .text-box {
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+
+/* CONTENT TOPIC */
+
+#fujitsu-content-topic {
+	padding-top: 0;
+}
+
+.container.full-width {
+	width: 100%;
+	max-width: 100%;
+	padding: 4% 0 5%;	
+}
+
+#fujitsu-content-topic .container.full-width {
+	background-image: url('../images/fujitsu-section-title-bg-yellow.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#fujitsu-banner.bp-banner .container.full-width {
+	background-image: url('../images/fujitsu-section-title-bg-blue.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.container.full-width .section-title {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+#fujitsu-content-topic .container:nth-of-type(2n) {
+	position: relative;
+	top: -50px;
+	z-index: 99;
+}
+
+/* ASSET */
+
+#fujitsu-asset {
+	background-color: #1201c3; /* For browsers that do not support gradients */
+  	background-image: linear-gradient(to bottom right, #1201c3, #55007f, #d00012);
+}
+
+#fujitsu-asset.cs-asset {
+	padding-bottom: 4%;
+}
+
+#fujitsu-asset.cs-asset row {
+	align-items: center;
+}
+
+#fujitsu-asset img {
+	margin-top: 30px;
+}
+
+#fujitsu-asset.ba-asset img, #fujitsu-asset.cs-asset img {
+	margin-top: 0;
+}
+
+.col-12.midi {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding-bottom: 0;
+}
+
+.flex-2-col-text-container {
+	display: flex;
+	align-items: flex-start;
+}
+
+.flex-col-1 {
+	width: 18%;
+}
+
+.flex-col-2 {
+	width: 88%;
+}
+
+.co-asset .row {
+	justify-content: space-between;
+}
+
+.co-asset .col-6 {
+	padding: 0;
+	width: 47%;
+	background-color: #ffffff;
+}
+
+.co-asset .col-6 .text-box {
+	background-color: #ffffff;
+	padding: 0 30px 30px;
+	color: #3c3c3c;
+}
+
+/* FEATURED CONTENT */
+
+.text-small {
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+/* INFO BLURB */
+
+#fujitsu-info-blurb {	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding: 0;
+}
+
+#fujitsu-info-blurb.dt-info-blurb {
+	background-image: url("../images/highlight-bg_tcm100-6584974_tcm100-2750236-32.jpeg");
+}
+
+/* GRID CONTENT */
+
+#fujitsu-grid-content {
+	background-color: #2a00c4;
+	background-image: linear-gradient(to bottom right, #2a00c4, #017d29);
+	padding-bottom: 50px;
+}
+
+.overlay {
+	background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.8) 50%, rgba(0,0,0,0) 50%, rgba(0,0,0,0) 100%);
+}
+
+#fujitsu-info-blurb .text-box {
+	padding: 50px 50px 70px 0;
+}
+
+#fujitsu-grid-content h2 {
+	padding-bottom: 0;
+	margin: 0 100px;
+}
+
+#fujitsu-grid-content .text-box {
+	padding: 20px;
+}
+
+/* CAROUSEL */
+
+#fujitsu-carousel {
+	background-color: #efefef;
+}
+
+.carousel {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.carousel-nav {
+	display: none;
+	position: relative;
+	top: 45%;
+}
+
+.cs-carousel .carousel-nav {
+	display: block;
+}
+
+.carousel-button-prev, .carousel-button-next {
+	position: absolute;	
+	width: 30px;
+	height: 30px;
+}
+
+.carousel-button-prev {
+	left: 10px; 
+}
+
+.carousel-button-next {
+	right: 10px;
+} 
+
+.carousel-container {
+	width: 100%;
+}
+
+.carousel-list {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
+
+.cm-carousel .carousel-list {
+	max-width: 960px; 
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.co-carousel .carousel-list {
+	max-width: 640px; 
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.cs-carousel .carousel-list {
+	height: 560px;
+	overflow: hidden;
+}
+
+.carousel-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 25%;
+	max-width: 300px;
+	background-color: #ffffff;
+	text-align: center;
+	padding: 30px 20px 50px;
+	margin: 10px;
+}
+
+.cm-carousel .carousel-item {
+	width: 33%;
+}
+
+.co-carousel .carousel-item {
+	width: 50%;
+}
+
+.cm-carousel .carousel-item.empty {
+	background-color: transparent;
+}
+
+.carousel-item .btn-wrapper {
+	margin: 0;
+}
+
+/* CONTACT INFO */
+
+.contact-info {
+	width: 100%;
+	max-width: 600px;
+	margin: 40px auto 0 auto;
+}
+
+.contact-info h3 {
+	padding-bottom: 10px;
+}
+
+.contact-phone {
+	position: relative;
+	padding-left: 50px;
+	display: inline-block;
+	margin-right: 50px;
+}
+
+.contact-phone::before {
+	position: absolute;
+	content: url("../../images/phone-icon.svg");
+	left: 0;
+}
+
+.contact-email {
+	position: relative;
+	padding-left: 50px;
+	display: inline-block;
+}
+
+.contact-email::before {
+	position: absolute;
+	content: url("../../images/email-icon.svg");
+	left: 0;
+}
+
+#fujitsu-cta.start-cta {
+	padding: 0;
+}
+
+.start-cta .container {
+	width: 100%;
+	max-width: 100%;
+	padding: 0;
+}
+
+.start-cta .col-6 {
+	padding: 0;
+}
+
+.start-cta .col-6:nth-of-type(1n) {
+	background-image: url('../images/fujitsu-intro-img-2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.start-cta .col-6:nth-of-type(2n) {
+	background-image: url('../images/fujitsu-intro-section-half-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 100px;
+}
+
+/* FOOTER */
+
+#fujitsu-footer {
+	background-color: #3c3c3c;
+	padding: 30px 0;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social-links a {
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 32px;
+	height: auto;
+}
+
+/* ACCORDION */
+
+.accordion-container {
+	background-color: #ffffff;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	padding: 0 30px;
+}
+
+.accordion-container.open {
+	box-shadow: 2px 2px 5px #cccccc;
+}
+
+#fujitsu-content-topic .accordion-container {
+	box-shadow: 2px 2px 5px #cccccc;
+}
+
+.accordion-container.open .panel {
+	display: block;
+}
+
+#fujitsu-content-topic .accordion-container .panel {
+	border-top: 1px solid #cccccc;
+	padding-top: 30px;
+	padding-bottom: 60px;
+}
+
+.accordion {
+	position: relative;
+	color: #444;
+	cursor: pointer;
+	padding: 25px 0;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 18px;
+	font-weight: 700;
+	transition: 0.4s;
+}
+
+.accordion::after {
+	position: absolute;
+	right: 0;
+	content: url('../images/arrow_forward_red.svg');
+}
+  
+.accordion.active::after, .accordion:hover::after {
+	background-color: #ffffff; 
+	content: url('../images/arrow_down.svg');
+}
+  
+.panel {
+	padding: 0 0 30px;
+	display: none;
+	overflow: hidden;
+}
+
+#fujitsu-content-topic .panel ul li {
+	margin-bottom: 0.5em;
+}
+
+/* TAB CONTENT */
+
+#fujitsu-tabs {
+	background-color: #efefef;
+}
+
+#fujitsu-tabs .row {
+	display: block;
+}
+
+.tab-content-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-bottom: 80px;
+}
+
+.tabcontent {
+	display: none;
+	border-top: none;
+}
+
+.tab-container {
+	border-radius: 15px;
+	background-color: #ffffff;
+}
+  
+/* Style the buttons inside the tab */
+.tab-menu {
+	display: flex;
+	border-bottom: 1px solid #efefef;
+  }
+
+.tab-menu a {
+	background-color: inherit;
+	border-right: 1px solid #efefef;
+	outline: none;
+	cursor: pointer;
+	padding: 20px 0 20px;
+	transition: 0.3s;
+	font-size: 17px;
+	width: 33.33%;
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	opacity: 0.5;
+	justify-content: center;
+	border-bottom: 3px solid rgba(234,0,0,0);
+	color: #3c3c3c;
+}
+
+.tab-menu a img {
+	margin-right: 10px;
+}
+
+.tab-menu a img.icon-active {
+	display: none;
+}
+
+.tab-menu a:last-child {
+	border-right: 0;
+}
+
+.tab-menu a:hover, .tab-menu a.active {
+	border-bottom: 3px solid rgba(234,0,0,1);
+	opacity: 1;
+	background-image: url('../images/icon-tab-active.svg');
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+.tab-menu a:hover img.icon-active, .tab-menu a.active img.icon-active {
+	display: block;
+}
+
+.tab-menu a:hover img.icon-default, .tab-menu a.active img.icon-default {
+	display: none;
+}
+
+#fujitsu-tabs .col-12.midi {
+	margin: 0 auto;
+	width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 0;
+	float: none;
+}
+
+.text-box-bordered {
+	border-radius: 15px;
+	border: 1px solid #3c3c3c;
+	padding: 30px;
+}
+
+.tabcontent .text-box {
+	margin-top: 40px;
+}
+
+.grid-box {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.img-box {
+	width: 30%;
+	max-width: 300px;
+}
+
+.content-text-box {
+	width: 70%;
+	max-width: 700px;
+	display: flex;
+}
+
+.content-text-box img {
+	max-width: 50px !important;
+}
+
+.content-text-box span:nth-of-type(1n) {
+	flex-grow: 1;
+}
+
+.content-text-box span:nth-of-type(2n) {
+	flex-grow: 11;
+}
+
+@media screen and (max-width: 1280px) {
+	
+	/* CAROUSEL */
+
+	.carousel-nav {
+		display: block;
+	}
+
+	.dt-carousel .carousel-list, 
+	.ba-carousel .carousel-list,
+	.cs-carousel .carousel-list {
+		max-width: 960px;
+		height: 560px;
+		overflow: hidden;
+	}
+
+	.dt-carousel .carousel-item, 
+	.ba-carousel .carousel-item,
+	.cs-carousel .carousel-item {
+		width: 33%;
+	}	
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.banner-text {
+		width: 50%;
+	}
+
+	.video-box {
+		margin-top: 30px;
+	}
+
+	#fujitsu-info-blurb .text-box {
+		padding: 50px 50px 70px 20px;
+	  }
+}
+
+@media screen and (max-width: 960px) {
+
+	[class*="col-"] {
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+
+	.container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	h1 {
+		width: 60%;
+	}
+
+	.section-title {
+		text-align: center;
+	}
+
+	/* HEADER */
+	#fujitsu-header {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	/* BANNER */
+
+	.mob-banner-image {
+		display: block;
+	  }
+
+	#fujitsu-banner {
+		height: auto !important;
+		background-image: none !important;
+		padding: 0;
+	}
+
+	#fujitsu-banner .container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	#fujitsu-banner .logo {
+		display: none;
+	}
+
+	.dt-banner .container {
+		background-color: #eb0100;
+		background-image: linear-gradient(to bottom right, #eb0100, #f53800);
+	}
+
+	.ba-banner .container {
+		background-color: #2d00a3;
+		background-image: linear-gradient(to bottom right, #2d00a3, #0c7ed4);
+	}
+
+	.cm-banner .container {
+		background-color: #e90003;
+		background-image: linear-gradient(to bottom right, #e90003, #d70086);
+	}
+
+	.cs-banner .container {
+		background-color: #006f2d;
+		background-image: linear-gradient(to bottom right, #006f2d, #1b9d15);
+	}
+
+	.co-banner .container {
+		background-color: #e40001;
+		background-image: linear-gradient(to bottom right, #e40001, #f64000);
+	}
+
+	.start-banner .container {
+		background-color: #d50093;
+		background-image: linear-gradient(to bottom right, #d50093, #ea0001);
+	}
+
+	.tab-menu a {
+		justify-content: flex-start;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* HOW IT WORKS */
+
+	.start-how-it-works .col-4, .start-content-topic .col-4 {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.start-content-topic .panel a {
+		display: block;
+		margin-right: 0 !important;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+
+	/* ASSET */
+
+	.dt-asset img, .cm-asset img, .cs-asset img {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.ba-asset h3 {
+		text-align: left;
+	}
+
+	.ba-asset .col-12.midi {
+		max-width: 100%;
+	}
+
+	.flex-2-col-text-container .text-box {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.flex-col-1 {
+		padding-bottom: 30px;
+	}
+
+	.flex-2-col-text-container {
+		flex-direction: column;
+	}
+
+	#fujitsu-asset.cs-asset {
+		padding-bottom: 7%;
+	  }
+
+	/* FEATURED CONTENT */
+
+	.video-box {
+		padding-top: 40px;
+		text-align: center;
+	}
+
+	/* GRID CONTENT */
+
+	#fujitsu-grid-content h2 {
+		text-align: left;
+		margin: 0 !important;
+	}
+
+	/* INFO BLURB */
+
+	.overlay {
+		background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+	}
+
+	/* CAROUSEL */
+
+	#fujitsu-carousel h2 {
+		text-align: center;
+	}
+
+	.dt-carousel .carousel-list, 
+	.ba-carousel .carousel-list,
+	.cs-carousel .carousel-list,
+	.cm-carousel .carousel-list {
+		max-width: 640px;
+		height: 560px;
+		overflow: hidden;
+	}
+
+	.carousel-item, 
+	.dt-carousel .carousel-item, 
+	.ba-carousel .carousel-item,
+	.cs-carousel .carousel-item,
+	.cm-carousel .carousel-item {
+		width: 50%;
+	}	
+
+	.ba-carousel .carousel-list {
+		height: 510px;
+	}
+
+	.carousel-button-prev {
+		left: 10px;
+	}
+	
+	.carousel-button-next {
+		right: 10px;
+	} 
+
+	/* FOOTER */
+
+	#fujitsu-cta h2, #fujitsu-cta .col-12 {
+		text-align: center;
+	}
+
+	.start-cta .container {
+		padding: 0;
+	}
+
+	.start-cta .col-6:first-child {
+		height: 400px;
+		max-height: 400px;
+	}
+
+	.start-cta .col-6:nth-of-type(2n) {
+		padding: 50px 100px 70px;
+	}
+}
+
+@media screen and (max-width: 844px) {
+	#fujitsu-featured-content h2.section-title {
+		width: 70%;
+	}
+
+	.tab-menu a span:first-child {
+		width: 30%;
+	}
+
+	.tab-menu a span:last-child {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 667px) {
+
+	.tab-container {
+		background-color: transparent;
+	}
+
+	.tab-menu {
+		flex-direction: column;
+	}
+
+	.tab-menu a {
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 10px;
+		background-color: #ffffff;
+		border-radius: 15px;
+	}
+
+	.tab-menu a span:first-child {
+		width: auto;
+	}
+
+	.tab-menu a span:last-child {
+		width: auto;
+	}
+
+	.tab-menu a:hover, .tab-menu a:active {
+		border-bottom: 3px solid rgba(234,0,0,0);
+		background-image: none;
+	}
+
+	.tabcontent {
+		background-color: #ffffff;
+		border-radius: 15px;
+		padding: 20px 0 40px;
+	}
+
+	#fujitsu-content-topic .container:nth-of-type(2n) {
+		top: auto;
+		margin-top: 30px;
+	}
+
+	.start-cta .col-6:nth-of-type(2n) {
+		padding: 50px 50px 70px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+
+	h1 {
+		width: 80%;
+	}
+
+	#fujitsu-featured-content h2.section-title {
+		width: 100%;
+	}
+
+	.carousel-nav {
+		display: none !important;
+	}
+
+	.co-carousel .carousel-list,
+	.dt-carousel .carousel-list,  
+	.ba-carousel .carousel-list,
+	.cs-carousel .carousel-list,
+	.cm-carousel .carousel-list {
+		max-width: 600px;
+		height: auto;
+		overflow: hidden;
+	}
+
+	.dt-carousel .carousel-item, 
+	.ba-carousel .carousel-item,
+	.cs-carousel .carousel-item,
+	.cm-carousel .carousel-item,
+	.co-carousel .carousel-item {
+		width: 100%;
+		max-width: 580px;
+	}	
+
+	.carousel-item img {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.co-asset {
+		padding: 5% 0 3%;
+	}
+
+	.co-asset .col-6 {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.dt-info-blurb {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 428px) {
+
+	h1, h2 {
+		font-size: 25px;
+	}
+
+	h1 {
+		width: 100%;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.banner-content {
+		padding: 10% 0;
+	}
+	  
+	.dt-asset img, .cm-asset img, .cs-asset img {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	#fujitsu-asset {
+		padding-bottom: 60px !important;
+	}
+
+	#fujitsu-asset.co-asset {
+		padding-bottom: 0 !important;
+	}
+
+	.co-asset .col-6 {
+		margin-left: 20px;
+		margin-right: 20px;
+	  }
+	
+	#fujitsu-banner .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.dt-asset img, .cm-asset img, .cs-asset img {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.dt-asset img, .cm-asset img, .cs-asset img {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.carousel-item img {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.video-box {
+		padding-top: 0;
+	}
+
+	.contact-phone {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.start-content-type a {
+		display: block;
+		margin-right: 0 !important;
+		margin-bottom: 10px;
+	}
+
+	.box-bordered {
+		margin: 20px;
+		padding: 0 !important;
+	}
+
+	.accordion-container .panel [class*="col-"] {
+		padding: 0;
+	}
+
+	.start-cta .col-6:nth-of-type(2n) {
+		padding: 20px 30px 40px;
+	}
+
+	.bp-tabs {
+		padding-bottom: 0;
+	}
+
+	.tab-menu a {
+		width: 90%;
+		margin: 0 auto 10px;
+	}
+
+	.tabcontent {
+		background-color: #ffffff;
+		border-radius: 0;
+		padding: 20px 0 40px;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+
+	.grid-box {
+		flex-direction: column;
+		margin-bottom: 30px;
+	}
+
+	.grid-box div {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	h1, h2 {
+		font-size: 22px;
+	}
+
+	h1 {
+		width: 100%;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+}

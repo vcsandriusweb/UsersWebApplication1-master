@@ -1,0 +1,332 @@
+﻿/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+
+.header {
+    background-color: #ffffff;
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.start-cta .container {
+    padding: 0;
+}
+
+#fujitsu-cta.start-cta .row {
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+}
+
+.mb-4.user-input {
+    margin-bottom: 0 !important;
+}
+
+/* Set style for menu */
+.menu a {
+    color: #3c3c3c;
+    font-weight: 700;
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 22px;
+}
+
+
+    .menu a:hover,
+    .menu a:active {
+        text-decoration: none;
+        border-bottom: 3px solid #EA0000;
+    }
+
+/* Set style for buttons */
+.btn {
+    border-radius: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.user-form-button-container {
+    margin-top: 20px;
+}
+
+.user-form-button-container .col-sm {
+    padding: 0;
+}
+
+.user-form-button-container .col-sm:first-child {
+    text-align: left;
+}
+
+.user-form-button-container .col-sm:last-child {
+    text-align: right;
+}
+
+.btn-arrow-container .btn {
+    position: relative;
+}
+
+.btn-arrow-container .btn.icon::after {
+    position: absolute;
+    content: "\e080";
+    margin: 0 5px;
+    font-family: 'Glyphicons Halflings';
+    color: #ffffff;
+}
+
+.workflow-content .btn-back {
+    background-color: transparent;
+    border: 1px solid #EA0000;
+    color: #EA0000;
+}
+
+.workflow-content input.btn-forward[type="submit"] {
+    background-image: url(../..images/arrow-colored.png);
+    background-repeat: no-repeat;
+    background-position: middle right;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="select"] {
+    max-width: 380px;
+}
+
+/* Set width to login inputs */
+.user-input input[type="text"],
+.user-input input[type="password"],
+.user-input input[type="email"],
+.user-input input[type="tel"] {
+    max-width: 500px;
+    box-shadow: 2px 2px 5px #dcdcdc inset;
+    border-color: #dcdcdc;
+    text-align: left;
+}
+
+.user-input textarea {
+    max-width: 100%;
+    box-shadow: 2px 2px 5px #dcdcdc inset;
+    border-color: #dcdcdc;
+}
+
+.user-input .form-label {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* Set style for Users table */
+table#MainContent_gvUsers {
+    color: #3c3c3c;
+    border: 0;
+}
+
+.table-striped tbody tr:nth-of-type(2n+2) {
+    background-color: rgba(255,255,255,1);
+}
+
+.table-striped tbody tr:nth-of-type(1) {
+    background-color: rgba(0,0,0,.05);
+}
+
+
+.table-striped tbody tr:nth-of-type(2n+3) {
+    background-color: rgba(255,255,255,.5);
+}
+
+#MainContent_gvUsers.table th, .table td {
+    border: 0 !important;
+}
+
+#MainContent_gvUsers.table td a {
+    color: #EA0000;
+}
+
+/* Set style for Workflow pages */
+.user-welcome-text {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.workflow-content {
+    background-color: rgba(255,255,255,1);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.workflow-progress-nav {
+    padding-bottom: 50px !important;
+}
+
+.workflow-progress-nav .btn-group {
+    margin-right: 0 !important;
+    position: relative;
+    background-image: linear-gradient(#ffffff 49%, #cccccc 49% 53%, #ffffff 53% 100%);
+}
+
+.workflow-progress-nav .btn-toolbar {
+    justify-content: center;
+}
+
+.workflow-progress-nav .btn {
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 1px #ebebeb;
+    color: #dcdcdc;
+    width: 40px;
+    height: 40px;
+     margin-left: 20px;
+    margin-right: 20px;
+    cursor: auto !important;
+    padding: 0;
+}
+
+.workflow-progress-nav .btn:hover,
+.workflow-progress-nav .btn:focus {
+     border: none;
+}
+
+.workflow-progress-nav .btn:nth-of-type(1) {
+     margin-left: 0;
+}
+
+.workflow-progress-nav .btn:nth-of-type(4) {
+     margin-right: 0;
+}
+
+.workflow-progress-nav .btn.badge-secondary {
+    color: #3c3c3c;
+}
+
+.workflow-progress-nav .btn-group > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:first-child) {
+    border-radius: 100%;
+}
+
+.workflow-content-assets [class*="col-"] {
+    float: none;
+    padding: 0;
+}
+
+.workflow3-radio label {
+    margin-bottom: 30px;
+}
+
+.btn-group-vertical {
+    width: 100%;
+    max-width: 400px;
+    padding-top: 30px;
+}
+
+.btn-group-vertical input[type=submit] {
+    background-color: transparent;
+    border: 1px solid #3c3c3c;
+    color: #3c3c3c;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.btn-group-vertical input[type=submit]:nth-of-type(1)::before {
+    position: absolute;
+    content: url();
+}
+
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn:not(:first-child) {
+    border-radius: 10px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #3c3c3c;
+    font-weight: 700;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #EA0000;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #EA0000;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.workflow3-radio {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+    background-color: #777;
+    border-color: #fff
+}

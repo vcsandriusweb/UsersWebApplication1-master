@@ -1,0 +1,30 @@
+﻿
+@font-face {
+    font-family: "FujitsuInfinityPro-Bold";
+    src: url("http://hybridcustomization.com/fonts/FujitsuInfinityPro-Bold.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "FujitsuInfinityPro-BoldItalic";
+    src: url("http://hybridcustomization.com/fonts/FujitsuInfinityPro-BoldItalic.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "FujitsuInfinityPro-ExtraBold";
+    src: url("http://hybridcustomization.com/fonts/FujitsuInfinityPro-ExtraBold.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "FujitsuInfinityPro-Light";
+    src: url("http://hybridcustomization.com/fonts/FujitsuInfinityPro-Light.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "FujitsuInfinityPro-Regular";
+    src: url("http://hybridcustomization.com/fonts/FujitsuInfinityPro-Regular.woff2") format("woff2")
+}
+
+@font-face {
+    font-family: "FujitsuInfinityPro-RegularItalic";
+    src: url("http://hybridcustomization.com/fonts/FujitsuInfinityPro-RegularItalic.woff2") format("woff2")
+}
