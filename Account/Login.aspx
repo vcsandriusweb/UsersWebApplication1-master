@@ -5,7 +5,7 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
 
     <section
-    style="background-image: url('../Images/7935-14-FJ_SB_H.png');background-size:cover;">
+    style="background-image: url('../Images/7935-14-FJ_SB_H.png');background-size:cover;height:100vh;">
 
         <div class="container py-5">
             <div class="row d-flex justify-content-center align-items-center h-100">

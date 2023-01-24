@@ -6,7 +6,7 @@
             <div class="col-9">
                 <p class="user-welcome-text">
                     Welcome <strong> <%: Session["fullName"].ToString()  %></strong>.<br />
-                    Here’s where you create your desired sales content
+                    Here's where you create your desired sales content
                 </p>
             </div>
         </div>
