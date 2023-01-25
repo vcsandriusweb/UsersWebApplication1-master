@@ -150,7 +150,7 @@
                                 </span>
                                 <span class="col-8">
                                     <span>The Digital Transformation/Cloud Adoption topic introduces the rapid changes that are taking place in terms of cloud adoption. How matching a cloud strategy with the specific objectives and outcomes businesses want to achieve, will enable companies to leverage the power of data and make the most of emerging technologies like AI, Machine Learning, and even Blockchain.</span>
-                                    <br><br> 
+                                    <br /><br /> 
                                     <span style="color:#EA0000;"><strong>Subjects covered</strong></span><br>
                                     <span><i class="bi bi-dot"></i>The role of the cloud in digital transformation</span><br> 
                                     <span><i class="bi bi-dot"></i>Achieving data for impact</span><br> 
@@ -166,7 +166,7 @@
                             <h2><i class="fas fa-question"></i>Business Agility</h2>
                             <p style="display: flex; flex-direction: column; padding: 20px;">
                                 <span>The Business Agility topic introduces the Fujitsu Cloud Managed Services solution to enable rapid (and secure) resource deployment and deliver the enhanced agility customer need to drive and manage rapid change so that they can thrive in a World of change and constant disruption. This is all achieved through our global cloud-native managed service, giving customers get end-to-end support for their cloud environment.</span>
-                                <br>
+                                <br /><br />
                                 <span style="color:#EA0000;"><strong>Subjects covered</strong></span>
                                 <span><i class="bi bi-dot"></i>Deploy and provision at speed</span>
                                 <span><i class="bi bi-dot"></i>Provide always-on services</span>
@@ -183,7 +183,7 @@
                             <p style="display: flex; flex-direction: column; padding: 20px;">
                                 <span>The Cloud Management topic looks at how businesses can maximize the value of the cloud. But a great cloud doesn't just happen; it has to be managed. That's why Fujitsu's Cloud Management Service (FCMS) can make a difference. <br><br>
                                 FCMS has been designed to free up people's time so they can focus on business objectives like innovation and delivering a great user and customer experience.</span>
-                                <br>
+                                <br /><br />
                                 <span style="color:#ea0000;"><strong>Subjects covered</strong></span>
                                 <span><i class="bi bi-dot"></i>Operate with agility, resilience, and compliance</span>
                                 <span><i class="bi bi-dot"></i>Ensuring cloud value</span>
@@ -197,7 +197,7 @@
                             <h2><i class="fas fa-laugh"></i>Cloud Security/Resilience</h2>
                             <p style="display: flex; flex-direction: column; padding: 20px;">
                                 <span>The Cloud Security/Resilience topic looks at why cloud configuration is vital in a world of growing cyber-security threats. How a focus on achieving resilience from great security, is the key to agility based on a confident workforce able to drive business development and innovation.</span>
-                                <br>
+                                <br /><br />
                                 <span style="color:#ea0000;"><strong>Subjects covered</strong></span>
                                 <span><i class="bi bi-dot"></i>Keeping cloud and multi-cloud environments secure</span>
                                 <span><i class="bi bi-dot"></i>Strengthen cyber security capabilities</span>
@@ -212,10 +212,10 @@
                         <li>
                             <input type="checkbox" checked>
                             <i class="arrow"></i>
-                            <h2><i class="fas fa-laugh"></i>Cost Optimisation</h2> 
+                            <h2><i class="fas fa-laugh"></i>Cost Optimization</h2> 
                             <p style="display: flex; flex-direction: column; padding: 20px;">
                                 <span>The Cost Optimization topic introduces the benefits of an efficient and agile infrastructure and how this enables businesses to cut day-to-day management costs, and remove technical debt and stranded costs. By optimizing costs, businesses can get as much value from their IT infrastructure as possible. Fujitsu Cloud Management Service enables businesses to realize the benefits of great digital services, do more with the cloud, focus on Opex, and balance speed with long-term needs.</span>
-                            <br>
+                            <br /><br />
                                 <span style="color:#ea0000;"><strong>Subjects covered</strong></span>
                                 <span><i class="bi bi-dot"></i>Efficient and agile infrastructuree</span>
                                 <span><i class="bi bi-dot"></i>Invest in business agility</span>
@@ -270,6 +270,6 @@
             </div>
         </div>
     </section>   
-    <script src="Scripts/accordion.js"></script></asp:Content>
+    </asp:Content>
 
 
